@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="width: fit-content; border: solid 3px darkmagenta; border-radius: 10px; padding: 10px; float: right; margin-right: 20px;">
+        <img src="./images/logoPerson.jpg" alt="logoPerson" style="width: 150px; height: auto;">
+    </div>
+    <div id = "content" style="padding-left: 20px; border-radius: 10px; border: solid 3px darkgreen;"></div>
+    <script>
+        var data = `
+# About Me
+
+## 👨‍💻 Who Am I?  
+Hi! I'm **[Your Name]**, a passionate software developer with experience in **web development**, **cloud computing**, and **platform integration**. I enjoy building efficient, scalable, and user-friendly systems that solve real-world problems.
+
+---
+
+## 🛠️ Skills & Expertise  
+- **Languages**: Python, JavaScript, Java, C#  
+- **Frameworks**: React, Django, Node.js  
+- **Platforms**: AWS, Google Cloud, Microsoft Azure  
+- **Version Control**: Git & GitHub  
+- **Other Tools**: Docker, Kubernetes, Postman  
+
+---
+
+## 📚 Education  
+- **Bachelor’s Degree in Computer Science**  
+  Faculty of Information Technology, Sripatum University  
+- **Certifications**:  
+  - AWS Certified Solutions Architect  
+  - Google Cloud Professional Developer  
+
+---
+
+## 📈 Professional Highlights  
+- Developed a **digital learning platform** for university students, handling over 5,000 users monthly.  
+- Migrated a legacy system to **AWS Cloud**, reducing costs by 30%.  
+- Implemented a **CI/CD pipeline** with GitHub Actions and Jenkins for a large-scale enterprise project.  
+
+---
+
+## 🌟 Personal Philosophy  
+I believe that **technology should empower, not complicate**. I strive to make every system I design intuitive and impactful.
+
+---
+
+## 📩 Contact Me  
+- **Email**: yourname@example.com  
+- **LinkedIn**: [linkedin.com/in/yourname](https://linkedin.com/in/yourname)  
+- **GitHub**: [github.com/yourusername](https://github.com/yourusername)  
+- **Portfolio**: [yourwebsite.com](https://yourwebsite.com)  
+
+---
+
+Feel free to reach out if you're interested in collaborating or discussing exciting projects! 🚀
+        `;
+        document.getElementById("content").innerHTML = marked.parse(data);
+    </script>
+    </body>
+</html>
